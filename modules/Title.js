@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 let titles = []
 
@@ -16,7 +17,7 @@ export function flushTitle() {
   return title
 }
 
-const { oneOfType, string, func } = React.PropTypes
+const { oneOfType, string, func } = PropTypes
 
 const Title = React.createClass({
 

@@ -77,5 +77,8 @@
     "react",
     "react-component",
     "title"
-  ]
+  ],
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
 }
