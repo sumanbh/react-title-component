@@ -26,6 +26,7 @@
     "build-umd": "NODE_ENV=production webpack modules/Title.js umd/ReactTitleComponent.js",
     "build-min": "NODE_ENV=production webpack -p modules/Title.js umd/ReactTitleComponent.min.js",
     "lint": "eslint modules examples",
+    "postinstall": "npm run build",
     "start": "node examples/server.js",
     "test": "npm run lint && karma start"
   },
