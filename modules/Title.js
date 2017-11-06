@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import createReactClass from 'create-react-class'
 
 let titles = []
 
@@ -19,7 +20,7 @@ export function flushTitle() {
 
 const { oneOfType, string, func } = PropTypes
 
-const Title = React.createClass({
+const Title = createReactClass({
 
   propTypes: {
     render: oneOfType([ string, func ]).isRequired
